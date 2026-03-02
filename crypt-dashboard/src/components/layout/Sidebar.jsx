@@ -35,32 +35,32 @@ export default function Sidebar({ isOpen, onClose }) {
                     <li className="text-purple flex items-center gap-5 font-semibold relative">
                         <AiFillAppstore className="text-xl" />
                         Overview
-                        <span className="absolute right-0 text-3xl w-1 h-6 text-purple">.</span>
+                        <span className="absolute right-0 text-6xl w-2 h-23 text-purple">.</span>
                     </li>
 
                     {/* centred sidebar menu items*/}
                     <li className="flex items-center gap-5">
-                        <img src={graph} alt="Chart" className="w-4 h-auto object-contain"/>
+                        <img src={graph} alt="Chart" className="w-4 h-10 object-contain"/>
                         Chart
                     </li>
                     <li className="flex items-center gap-5">
-                        <img src={wallet2} alt="Wallet" className="w-4 h-auto object-contain"/>
+                        <img src={wallet2} alt="Wallet" className="w-4 h-10 object-contain"/>
                         Transactions
                     </li>
                     <li className="flex items-center gap-5">
-                        <img src={walletminus} alt="Wallet Minus" className="w-4 h-auto object-contain"/>    
+                        <img src={walletminus} alt="Wallet Minus" className="w-4 h-10 object-contain"/>    
                         Wallet
                     </li>
                     <li className="flex items-center gap-5">
-                        <img src={sms} alt="SMS" className="w-4 h-auto object-contain"/>
+                        <img src={sms} alt="SMS" className="w-4 h-10 object-contain"/>
                         Mailbox
                     </li>
                     <li className="flex items-center gap-5">
-                       <img src={Setting} alt="Setting" className="w-4 h-auto object-contain"/>
+                       <img src={Setting} alt="Setting" className="w-4 h-10 object-contain"/>
                         Setting
                     </li>
                     <li className="flex items-center gap-5 ">
-                      <img src={Logout} alt="Logout" className="w-4 h-auto object-contain"/>
+                      <img src={Logout} alt="Logout" className="w-4 h-10 object-contain"/>
                         Logout
                     </li>
                 </ul>

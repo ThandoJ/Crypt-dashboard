@@ -11,7 +11,7 @@ export default function MainContent() {
       <div className="grid grid-cols-4 gap-4 flex-[0.9]">
 
         {/* Metric Cards */}
-        <div className=" col-span-2 grid grid-cols-2 gap-x-6 gap-y-6 max-w-[400px]">
+        <div className=" col-span-2 grid grid-cols-2 gap-x-6 gap-y-6 max-w-[550px]">
           <MetricCard />
         </div>
 

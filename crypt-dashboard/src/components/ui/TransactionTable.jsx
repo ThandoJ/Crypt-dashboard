@@ -53,7 +53,7 @@ export default function Transactions() {
             <img
               src={coin.logo}
               alt={coin.name}
-              className="w-10 h-10 object-contain"
+              className="w-10 h-13 object-contain"
             />
 
             <div>
