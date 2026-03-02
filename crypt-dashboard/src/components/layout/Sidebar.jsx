@@ -19,7 +19,7 @@ export default function Sidebar({ isOpen, onClose }) {
             <div className={`fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden ${isOpen ? 'block' : 'hidden'}`} onClick={onClose}></div>
 
             {/* Sidebar fixed on the left*/}
-            <nav className={`fixed top-0 left-0 w-[263px] h-full bg-[#F4F5FA] px-8 py-6 flex flex-col z-50 transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
+            <nav className={`fixed top-0 left-0 w-[263px] h-full bg-[#F7F8FC] px-8 py-6 flex flex-col z-50 transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
                 {/* toggle button available on mobile view*/}
                 <button className="lg:hidden absolute top-6 right-6 text-gray-600" onClick={onClose}>
                     <FiX className="text-2xl" />

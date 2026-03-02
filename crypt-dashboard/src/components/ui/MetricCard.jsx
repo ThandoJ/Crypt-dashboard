@@ -42,17 +42,22 @@ export default function MetricCard() {
     },
   ];
 
-   return (
+
+
+ return (
     <>
       {/* Array map that creates a card for each coin*/}
       {coins.map((coin, index) => (
-        <div key={index} className="bg-white rounded-lg p-4 cols card-style">
+       <div
+  key={index}
+  className="bg-white rounded-lg p-3 shadow-sm aspect-square flex flex-col justify-between">
+
 
           {/*Symbol and the trend*/}
-            <div className="flex items-center justify-between mb-3"> 
+            <div className="flex items-center justify-between mb-2"> 
 
             {/*Coin image*/}
-            <img src={coin.image} alt={coin.name} className="w-[52px] h-[52px] top[32px] left-[30px] object-contain"/>
+            <img src={coin.image} alt={coin.name} className="w-[40px] h-[40px] object-contain"/>
 
             {/*Trend indicator with two different colors */}
             <p className={`text-sm font-semibold ${coin.positive ? "text-trend-green" : "text-trend-red"}`}>
@@ -61,7 +66,7 @@ export default function MetricCard() {
          </div>
 
           {/*Coin price and coin name below the coin image*/}
-          <div className="flex flex-col mt-10">
+          <div className="flex flex-col mt-2">
 
             {/*Coin price*/}
             <h2 className="text-xl font-bold coin-value">

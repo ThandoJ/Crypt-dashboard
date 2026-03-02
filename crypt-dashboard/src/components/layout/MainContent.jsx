@@ -1,37 +1,40 @@
-import Header from "./Header";
 import MetricCard from "../ui/MetricCard";
 import ChartVisual from "../ui/ChartVisual";
-import TransactionTable from "../ui/TransactionTable";
-import { FaBitcoin, FaEthereum } from "react-icons/fa";
-import { SiLitecoin, SiCardano } from "react-icons/si";
+import Transactions from "../ui/TransactionTable";
+import LiveMarket from "../ui/LiveMarket";
 
 export default function MainContent() {
   return (
-    <div className="flex-1 p-10 overflow-y-auto">
+    <div className="px-8 py-6 bg-[#F9FAFD] flex-1 overflow-y-auto">
 
-      <Header />
+      {/* Top Section */}
+      <div className="grid grid-cols-3 gap-6">
 
-{/* Chart + Transactions */}
-      <div className="grid grid-cols-3 gap-8 mt-10">
-        <div className="col-span-2">
+        {/* Metric Cards */}
+        <div className="mt-4 col-span-2 grid grid-cols-2 gap-x-3 gap-y-2 max-w-[500px]">
+          <MetricCard />
+        </div>
+
+        {/* BTC Chart */}
+        <div className="bg-white rounded-xl p-6 shadow-sm">
           <ChartVisual />
         </div>
-        <TransactionTable />
+
+      </div>
+
+      {/* Bottom Section */}
+      <div className="grid grid-cols-2 gap-4 mt-10">
+
+        <div className="bg-white rounded-xl p-6 shadow-sm">
+          <LiveMarket />
+        </div>
+
+        <div className="bg-white rounded-xl p-6 shadow-sm">
+          <Transactions />
+        </div>
+
       </div>
 
     </div>
   );
 }
-
-
-
-
-  {/* Chart + Transactions */}
-      <div className="grid grid-cols-3 gap-8 mt-10">
-        <div className="col-span-2">
-          <ChartVisual />
-        </div>
-        <TransactionTable />
-      </div>
-
-
