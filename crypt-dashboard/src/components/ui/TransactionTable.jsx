@@ -42,24 +42,38 @@ export default function Transactions() {
         <section className="ml-30">
             <h2 className="text-2xl font-semibold text-heading mb-4">Transactions</h2>
 
-            <div className="space-y-4">
-                {coins.map((coin, index) => (
-                    // Grid format
-                    <div key={index} className="grid grid-cols-[auto_1fr_auto_auto_1fr] items-center gap-x-2">
+           <div className="space-y-4">
+      {coins.map((coin, index) => (
+        <div
+          key={index}
+          className="flex items-center justify-between"
+        >
+          {/* Left Side */}
+          <div className="flex items-center gap-3">
+            <img
+              src={coin.logo}
+              alt={coin.name}
+              className="w-10 h-10 object-contain"
+            />
 
-                        <img
-                            src={coin.logo}
-                            alt={coin.name}
-                            className="w-[50px] h-[50px] object-contain space-x-1"
-                        />
-                    <div className="col-span-2 flex flex-col">
-                            <p className="font-semibold space-x-2 text-gray-800">{coin.name}</p>
-                            <p className="text-xs text-gray-500">{coin.transaction}</p>
-                        </div>
+            <div>
+              <p className="font-semibold text-gray-800">
+                {coin.name}
+              </p>
+              <p className="text-xs text-gray-500">
+                {coin.transaction}
+              </p>
+            </div>
+          </div>
 
-                        <div className="ml-40">
-                            <p className="font-semibold text-gray-800">${coin.price.split(' ')[0]}</p>
-                            <p className="text-xs text-gray-500">{coin.date}</p>
+          {/* Right Side */}
+          <div className="text-right">
+            <p className="font-semibold text-gray-800">
+              ${coin.price.split(" ")[0]}
+            </p>
+            <p className="text-xs text-gray-500">
+              {coin.date}
+            </p>
                         </div>
                     </div>
                 ))}
