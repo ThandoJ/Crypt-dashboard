@@ -50,7 +50,7 @@ export default function MetricCard() {
       {coins.map((coin, index) => (
        <div
   key={index}
-  className="bg-white rounded-lg p-3 shadow-sm aspect-square flex flex-col justify-between">
+  className="bg-white rounded-lg p-3 shadow-sm  flex flex-col justify-between">
 
 
           {/*Symbol and the trend*/}
@@ -69,9 +69,9 @@ export default function MetricCard() {
           <div className="flex flex-col mt-2">
 
             {/*Coin price*/}
-            <h2 className="text-xl font-bold coin-value">
+            <h3 className="text-xl font-bold coin-value">
               {coin.price}
-            </h2>
+            </h3>
 
             {/*Coin name and symbol*/}
             <p className="text-sm text-coin">

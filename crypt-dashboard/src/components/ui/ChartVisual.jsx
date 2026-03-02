@@ -1,12 +1,12 @@
 import React from "react";
-import BTCChart from "../../assets/BTCchart.png"; // make sure filename matches EXACTLY
+import BTCChart from "../../assets/BTCchart.png"; 
 
 export default function ChartVisual() {
   return (
     <div>
     
 
-      <div className="w-full h-[260px]">
+      <div className="w-full h-full">
         <img
           src={BTCChart}
           alt="BTCChart"
