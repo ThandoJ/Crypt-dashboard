@@ -3,13 +3,13 @@ import React from "react";
 import { AiFillAppstore } from "react-icons/ai";
 import {FiX } from "react-icons/fi";
 //import image
-import Logo from "../assets/Logo.png";
-import Logout from "../assets/logout.png";
-import sms from "../assets/sms.png";
-import walletminus from "../assets/wallet-minus.png";
-import wallet2 from "../assets/wallet-2.png";
-import Setting from "../assets/setting-2.png";
-import graph from "../assets/graph.png";
+import Logo from "../../assets/Logo.png";
+import Logout from "../../assets/logout.png";
+import sms from "../../assets/sms.png";
+import walletminus from "../../assets/wallet-minus.png";
+import wallet2 from "../../assets/wallet-2.png";
+import Setting from "../../assets/setting-2.png";
+import graph from "../../assets/graph.png";
 
 
 export default function Sidebar({ isOpen, onClose }) {

@@ -1,43 +1,63 @@
-import { FiSearch, FiBell, FiMenu } from "react-icons/fi";
+import React from "react";
+import { FiSearch, FiBell, FiHelpCircle, FiChevronDown, FiMenu } from "react-icons/fi";
 
-export default function Header({ setIsOpen }) {
-  return (
-    <div className="flex justify-between items-center">
 
-      {/* Left section */}
-      <div className="flex items-center gap-4">
+export default function Header({ onMenuClick }) {
+    return (
+        //Navigation bar at the top, with the searchbar, icons, and user profile
+        <header className="w-full flex items-center justify-between px-8 py-4 bg-white border-b border-gray-200">
+            
+            {/*Hamburger icon*/}
+            <button className="lg:hidden text-gray-600" onClick={onMenuClick}>
 
-        {/* Hamburger (mobile only) */}
-        <FiMenu
-          className="lg:hidden text-gray-600 cursor-pointer"
-          size={22}
-          onClick={() => setIsOpen(true)}
-        />
+                {/*toggle button*/}
+                <FiMenu className="text-2xl" />
+            </button>
 
-        <div className="relative w-52 sm:w-72 lg:w-96">
-          <FiSearch className="absolute left-4 top-3.5 text-gray-400" />
-          <input
-            type="text"
-            placeholder="Search type of keywords"
-            className="w-full pl-12 pr-4 py-3 rounded-2xl bg-white shadow-sm text-sm outline-none"
-          />
-        </div>
+            {/* Searchbar */}
+            <div className="flex items-center gap-2 w-[320px] border border-gray-400 rounded-[10px] px-3 py-2 bg-white">
+                <input
+                    type="text"
+                    placeholder="Search type of keywords"
+                    className="flex-1 outline-none text-help"
+                />
+                <FiSearch className="text-help"/>
+            </div>
 
-      </div>
+            {/*Has the help icon, bell and user profile*/}
+            <div className="flex items-center gap-6 text-help">
+                {/* Notification bell */}
+                <FiBell className="text-2xl" />
 
-      {/* Right section */}
-      <div className="flex items-center gap-6">
-        <FiBell size={20} className="text-gray-500 cursor-pointer" />
+                {/* Help icon */}
+                <FiHelpCircle className="text-2xl" />
 
-        <div className="hidden sm:flex items-center gap-3">
-          <div className="w-10 h-10 bg-gray-300 rounded-full"></div>
-          <div>
-            <p className="text-sm font-semibold">Lauria</p>
-            <p className="text-xs text-gray-500">Admin</p>
-          </div>
-        </div>
-      </div>
+                {/*User Profile information, with dropdown icon*/}
+                <div className="flex items-center gap-3">
+                    {/* User profile avatar*/}
+                    <p className="w-10 h-10 rounded-full bg-help bg-gray-400"></p>
+                    
+                    {/*User profile details*/}
+                    <div className="flex flex-col">
+                        <p className="text-[14px] font-bold text-black">Laurice</p>
+                        <p className="text-sm text-help">@laurice22</p>
+                    </div>
 
-    </div>
-  );
+                    {/* Dropdown arrow icon */}
+                    <FiChevronDown className="text-help" />
+                </div>
+            </div>
+        </header>
+    );
 }
+
+
+
+
+
+
+
+
+
+
+

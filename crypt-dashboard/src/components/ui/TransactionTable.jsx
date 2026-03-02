@@ -1,9 +1,9 @@
 import React from "react";
 
-import ETH from "../assets/ETH Trans.png";
-import BTC from "../assets/BTC Trans.png";
-import BTC2 from "../assets/2BTC Trans.png";
-import ITC from "../assets/ITC Trans.png";
+import ETH from "../../assets/ETH Trans.png";
+import BTC from "../../assets/BTC Trans.png";
+import BTC2 from "../../assets/2BTC Trans.png";
+import ITC from "../../assets/ITC Trans.png";
 
 export default function Transactions() {
     const coins = [
