@@ -1,5 +1,5 @@
 import React from "react";
-import BTCChart from "../../assets/BTCchart.png"; 
+import BTCChart from "../../assets/BTCChart.png"; 
 
 export default function ChartVisual() {
   return (
