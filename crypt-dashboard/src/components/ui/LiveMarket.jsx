@@ -33,7 +33,7 @@ export default function LiveMarket() {
             graph: ITCGraph,
             name: "Litecoin",
             symbol: "LTC / USDT",
-            change: "-9.02%",
+            change: "-4.02%",
             price: "9,786 USD",
         },
         {
@@ -41,7 +41,7 @@ export default function LiveMarket() {
             graph: AdaGraph,
             name: "Cardano",
             symbol: "ADA / USDT",
-            change: "+4.86%",
+            change: "+0.02%",
             price: "4,786 USD",
         },
     ];
