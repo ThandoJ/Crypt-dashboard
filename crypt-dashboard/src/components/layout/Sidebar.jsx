@@ -11,7 +11,6 @@ import wallet2 from "../../assets/wallet-2.png";
 import Setting from "../../assets/setting-2.png";
 import graph from "../../assets/graph.png";
 
-
 export default function Sidebar({ isOpen, onClose }) {
     return (
         <>
